@@ -19,7 +19,7 @@
     <logger name="play" level="INFO" />
     <logger name="application" level="DEBUG" />
     <logger name="scala.slick.session" level="DEBUG" />
-    <logger name="com.moviedemo" level="DEBUG" />
+    <logger name="com.com.ucampus.recommend" level="DEBUG" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />

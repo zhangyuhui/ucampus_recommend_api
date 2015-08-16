@@ -1,9 +1,9 @@
 import com.typesafe.config.ConfigFactory
 import com.google.inject.{Guice}
-import com.moviedemo.mvc.{EndpointNotImplemented, ForbiddenRequest}
-import com.moviedemo.settings.{Inject, InjectorContainer}
+import com.ucampus.mvc.{EndpointNotImplemented, ForbiddenRequest}
+import com.ucampus.settings.{Inject, InjectorContainer}
 import java.io.File
-import com.moviedemo.tools
+import com.ucampus.tools
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 import play.api._

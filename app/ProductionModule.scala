@@ -1,11 +1,12 @@
-import com.moviedemo.domain.interfaces._
-import com.moviedemo.mvc.Formats
-import com.moviedemo.mvc._
+import com.ucampus.data.repositories.CourseRepositoryImpl
+import com.ucampus.domain.interfaces._
+import com.ucampus.mvc.Formats
+import com.ucampus.mvc._
 import com.tzavellas.sse.guice.ScalaModule
-import com.moviedemo.data.models.ModelFormats
-import com.moviedemo.services._
-import com.moviedemo.data.repositories._
-import com.moviedemo.tools._
+import com.ucampus.data.models.ModelFormats
+import com.ucampus.services._
+import com.ucampus.data.repositories._
+import com.ucampus.tools._
 
 class ProductionModule extends ScalaModule {
   def configure() {
@@ -15,14 +16,10 @@ class ProductionModule extends ScalaModule {
     Formats.registerRecordTypes(ModelFormats.recordTypes)
 
     // Service
-    bind[MovieService].to[MovieServiceImpl]
-    bind[UserService].to[UserServiceImpl]
-    bind[ScoreService].to[ScoreServiceImpl]
+    bind[CourseService].to[CourseServiceImpl]
 
     // Repository
-    bind[MovieRepository].to[MovieRepositoryImpl]
-    bind[UserRepository].to[UserRepositoryImpl]
-    bind[ScoreRepository].to[ScoreRepositoryImpl]
+    bind[CourseRepository].to[CourseRepositoryImpl]
 
     // Other
     bind[Cache].to[CacheImpl]

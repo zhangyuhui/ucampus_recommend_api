@@ -1,4 +1,4 @@
-package com.moviedemo.settings
+package com.ucampus.settings
 
 import com.google.inject.{ConfigurationException, Injector}
 import play.api.Configuration

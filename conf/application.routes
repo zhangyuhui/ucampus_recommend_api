@@ -1,0 +1,14 @@
+# swagger entry api route
+OPTIONS        /                                               com.ucampus.mvc.OptionsController.index
+OPTIONS        /*path                                          com.ucampus.mvc.OptionsController.catchAll(path)
+
+GET            /                                               controllers.Assets.at(path="/public", file="swagger/index.html")
+GET            /docs                                           controllers.Assets.at(path="/public", file="swagger/index.html")
+
+GET            /docs/api-docs.json                             controllers.SwaggerApis.getResources
+GET            /docs/api-docs.json/courses                     controllers.SwaggerApis.getResource(path = "/courses")
+
+GET            /courses/recommend                              @controllers.Courses.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET            /assets/*file                                   controllers.Assets.at(path="/public", file)
