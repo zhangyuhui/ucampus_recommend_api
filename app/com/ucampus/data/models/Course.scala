@@ -12,6 +12,35 @@ case class Course(
     @BeanProperty
     id: Int,
 
+    @(ApiModelProperty@field)(value = "Course Key")
+    @BeanProperty
+    key: String,
+
     @(ApiModelProperty@field)(value = "Course Name")
     @BeanProperty
-    name: String) extends HasId[Int]
+    name: String,
+
+    @(ApiModelProperty@field)(value = "Course Description")
+    @BeanProperty
+    description: String,
+
+    @(ApiModelProperty@field)(value = "Course Teacher Name")
+    @BeanProperty
+    teacherName: String,
+
+    @(ApiModelProperty@field)(value = "Course Teacher Description")
+    @BeanProperty
+    teacherDescription: String,
+
+    @(ApiModelProperty@field)(value = "Course University")
+    @BeanProperty
+    university: String,
+
+    @(ApiModelProperty@field)(value = "Course Category")
+    @BeanProperty
+    category: String,
+
+    @(ApiModelProperty@field)(value = "Course Url")
+    @BeanProperty
+    url: String) extends HasId[Int]
+

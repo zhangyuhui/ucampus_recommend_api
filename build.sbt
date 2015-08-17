@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "mysql" % "mysql-connector-java" % "5.1.32",
   "org.mindrot" % "jbcrypt" % "0.3m",
   "org.mongodb" %% "casbah" % "2.5.0",
-  "org.elasticsearch" % "elasticsearch" % "0.20.0"
+  "org.elasticsearch" % "elasticsearch" % "1.6.0"
 )
 
 lazy val macros = RootProject(file("macros"))
